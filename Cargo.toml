@@ -1,0 +1,20 @@
+[package]
+name = "fivefoul"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+maud = { version = "*", features = ["axum"] }
+
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+
+rusqlite  = { version = "*", features = ["bundled"]}
+
+serde = { version = "1.0", features = ["derive"] }
+
+tokio-stream = { version = "0.1", features = ["sync"] }
+futures = "0.3"
+uuid = { version = "1", features = ["v4"] }
+
+tower-http = { version = "0.6", features = ["fs"]}
